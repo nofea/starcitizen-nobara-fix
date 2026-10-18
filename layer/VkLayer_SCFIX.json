@@ -1,0 +1,15 @@
+{
+    "file_format_version": "1.1.2",
+    "layer": {
+        "name": "VK_LAYER_SCFIX_hide_nvx",
+        "type": "GLOBAL",
+        "library_path": "./libVkLayer_scfix.so",
+        "api_version": "1.4.309",
+        "implementation_version": "1",
+        "description": "Hides VK_NVX_binary_import/VK_NVX_image_view_handle (avoids libcuda VA-space failure under Wine)",
+        "functions": {
+            "vkGetInstanceProcAddr": "scfix_GetInstanceProcAddr",
+            "vkGetDeviceProcAddr": "scfix_GetDeviceProcAddr"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+# build output
+/build/
+
+# devenv
+.devenv/
+.devenv.flake.nix
+.direnv/
+devenv.local.nix
+
+# diagnostic run output (contains local paths / process info)
+*.log
+trace.*
+go.*
+attach.out
